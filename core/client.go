@@ -70,6 +70,7 @@ type Client struct {
 // NewClient 初始化一个微信支付API v3 HTTPClient
 //
 // 初始化的时候你可以传递多个配置信息
+// 添加一行注释代码
 func NewClient(ctx context.Context, opts ...ClientOption) (*Client, error) {
 	settings, err := initSettings(opts)
 	if err != nil {
