@@ -72,6 +72,7 @@ type Client struct {
 // 初始化的时候你可以传递多个配置信息
 // 添加一行注释代码
 func NewClient(ctx context.Context, opts ...ClientOption) (*Client, error) {
+	fmt.Println("#########################################################################")
 	settings, err := initSettings(opts)
 	if err != nil {
 		return nil, fmt.Errorf("init client setting err:%v", err)
