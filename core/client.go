@@ -79,6 +79,7 @@ func NewClient(ctx context.Context, opts ...ClientOption) (*Client, error) {
 	}
 
 	client := initClientWithSettings(ctx, settings)
+	fmt.Println("#########################################################################")
 	return client, nil
 }
 
